@@ -47,12 +47,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Typing Effect in Hero Section
     new Typed('#typing-effect', {
-        strings: ['a Frontend Developer.', 'a UI/UX Enthusiast.', 'a Problem Solver.'],
+        strings: [
+          'a Full Stack Developer.',
+          'a Robotics & ML Engineer.',
+          'a Problem Solver.',
+          'a Startup Founder.'
+        ],
         typeSpeed: 50,
         backSpeed: 30,
-        loop: true,
-        backDelay: 2000,
-    });
+        loop: true
+      });
+      
 
     // ScrollReveal Animations
     const sr = ScrollReveal({
