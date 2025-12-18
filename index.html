@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush | Portfolio</title>
+    <meta name="description" content="A personal portfolio website for Ayush, a passionate web developer.">
+    
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans antialiased">
+
+    <header id="header" class="bg-white/80 backdrop-blur-md shadow-sm fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold text-indigo-600">Ayush.dev</a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden">
+                <i data-lucide="menu" class="h-6 w-6"></i>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <a href="#about" class="block py-2 px-6 text-sm hover:bg-gray-200">About</a>
+            <a href="#skills" class="block py-2 px-6 text-sm hover:bg-gray-200">Skills</a>
+            <a href="#projects" class="block py-2 px-6 text-sm hover:bg-gray-200">Projects</a>
+            <a href="#contact" class="block py-2 px-6 text-sm hover:bg-gray-200">Contact</a>
+        </div>
+    </header>
+
+    <main class="pt-20"> <section id="home" class="min-h-screen flex items-center bg-white">
+            <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-10 md:mb-0 text-center md:text-left">
+                    <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-4">
+                        Hi, I’m Ayush
+                    </h1>
+                    <h2 class="text-2xl md:text-3xl font-medium text-indigo-600 mb-6">
+                        I am <span id="typing-effect"></span>
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-8 max-w-lg mx-auto md:mx-0">
+                        A passionate Web Developer with a knack for creating elegant and efficient solutions. I love turning ideas into reality through code.
+                    </p>
+                    <div class="flex justify-center md:justify-start space-x-4">
+                        <a href="assets/resume/Ayush_Resume.pdf" download class="btn btn-primary">
+                            <i data-lucide="download" class="mr-2 h-5 w-5"></i> Download Resume
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i data-lucide="mail" class="mr-2 h-5 w-5"></i> Contact Me
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="assets/images/profile.png" alt="Ayush's Profile Picture" class="w-72 h-72 md:w-96 md:h-96 rounded-full object-cover shadow-2xl border-8 border-white">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">About Me</h2>
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/3">
+                        <img src="assets/images/profile.png" alt="Ayush" class="rounded-lg shadow-xl w-full">
+                    </div>
+                    <div class="md:w-2/3">
+                        <h3 class="text-2xl font-semibold mb-4">Who I Am</h3>
+                        <p class="text-gray-600 mb-4">
+                            Hello! I'm Ayush, a web developer based in Bengaluru. My journey into web development started with a curiosity for how things work on the internet. Today, I specialize in building responsive, user-friendly websites and applications.
+                        </p>
+                        <p class="text-gray-600 mb-6">
+                            I thrive on solving problems and am constantly learning new technologies to keep my skills sharp. When I'm not coding, you can find me exploring new coffee shops or hiking in nature.
+                        </p>
+                        <a href="assets/resume/Ayush_Resume.pdf" download class="btn btn-primary">
+                            <i data-lucide="download" class="mr-2 h-5 w-5"></i> Download My Resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">My Skills</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Frontend</h3>
+                        <div class="skill-grid">
+                            <div class="skill-card"><i data-lucide="html5" class="skill-icon text-orange-500"></i><span>HTML5</span></div>
+                            <div class="skill-card"><i data-lucide="css3" class="skill-icon text-blue-500"></i><span>CSS3</span></div>
+                            <div class="skill-card"><i data-lucide="javascript" class="skill-icon text-yellow-400"></i><span>JavaScript</span></div>
+                            <div class="skill-card"><i data-lucide="react" class="skill-icon text-cyan-400"></i><span>React</span></div>
+                            <div class="skill-card"><i data-lucide="tailwind" class="skill-icon text-teal-400"></i><span>Tailwind CSS</span></div>
+                            <div class="skill-card"><i data-lucide="bootstrap" class="skill-icon text-purple-600"></i><span>Bootstrap</span></div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Backend</h3>
+                        <div class="skill-grid">
+                            <div class="skill-card"><i data-lucide="nodejs" class="skill-icon text-green-500"></i><span>Node.js</span></div>
+                            <div class="skill-card"><i data-lucide="server" class="skill-icon text-gray-600"></i><span>Express.js</span></div>
+                            <div class="skill-card"><i data-lucide="database" class="skill-icon text-green-700"></i><span>MongoDB</span></div>
+                            <div class="skill-card"><i data-lucide="braces" class="skill-icon text-blue-600"></i><span>REST API</span></div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Tools & Others</h3>
+                        <div class="skill-grid">
+                            <div class="skill-card"><i data-lucide="git-branch" class="skill-icon text-red-500"></i><span>Git</span></div>
+                            <div class="skill-card"><i data-lucide="github" class="skill-icon text-black"></i><span>GitHub</span></div>
+                            <div class="skill-card"><i data-lucide="figma" class="skill-icon text-pink-500"></i><span>Figma</span></div>
+                            <div class="skill-card"><i data-lucide="terminal-square" class="skill-icon text-gray-700"></i><span>VS Code</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">My Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/400x250/indigo/ffffff?text=Project+1" alt="Project 1 Thumbnail" class="project-image">
+                        <div class="p-6">
+                            <h3 class="project-title">E-commerce Platform</h3>
+                            <p class="project-description">A full-featured e-commerce site with product listings, a shopping cart, and a checkout process.</p>
+                            <div class="project-tech-stack">
+                                <span>React</span><span>Node.js</span><span>MongoDB</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" target="_blank" class="project-link"><i data-lucide="github" class="h-5 w-5 mr-1"></i> GitHub</a>
+                                <a href="#" target="_blank" class="project-link"><i data-lucide="external-link" class="h-5 w-5 mr-1"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/400x250/teal/ffffff?text=Project+2" alt="Project 2 Thumbnail" class="project-image">
+                        <div class="p-6">
+                            <h3 class="project-title">Task Management App</h3>
+                            <p class="project-description">A Kanban-style task management app with drag-and-drop functionality to organize workflows.</p>
+                            <div class="project-tech-stack">
+                                <span>JavaScript</span><span>HTML5</span><span>CSS3</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" target="_blank" class="project-link"><i data-lucide="github" class="h-5 w-5 mr-1"></i> GitHub</a>
+                                <a href="#" target="_blank" class="project-link"><i data-lucide="external-link" class="h-5 w-5 mr-1"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/400x250/rose/ffffff?text=Project+3" alt="Project 3 Thumbnail" class="project-image">
+                        <div class="p-6">
+                            <h3 class="project-title">Weather Dashboard</h3>
+                            <p class="project-description">A clean weather dashboard that provides real-time weather data for any city using a third-party API.</p>
+                            <div class="project-tech-stack">
+                                <span>API</span><span>JavaScript</span><span>Tailwind CSS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" target="_blank" class="project-link"><i data-lucide="github" class="h-5 w-5 mr-1"></i> GitHub</a>
+                                <a href="#" target="_blank" class="project-link"><i data-lucide="external-link" class="h-5 w-5 mr-1"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Get in Touch</h2>
+                <div class="max-w-2xl mx-auto">
+                    <p class="text-center text-gray-600 mb-8">
+                        Have a project in mind or just want to say hello? Feel free to send me a message.
+                    </p>
+                    <form action="mailto:your-email@example.com" method="post" enctype="text/plain" class="space-y-6">
+                        <div>
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                        </div>
+                        <div>
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+                        <div>
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" rows="4" class="form-input" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary w-full md:w-auto">
+                                <i data-lucide="send" class="mr-2 h-5 w-5"></i> Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" target="_blank" class="social-link"><i data-lucide="github"></i></a>
+                <a href="#" target="_blank" class="social-link"><i data-lucide="linkedin"></i></a>
+                <a href="#" target="_blank" class="social-link"><i data-lucide="twitter"></i></a>
+            </div>
+            <p>&copy; 2025 Ayush. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <button id="scrollToTopBtn" class="fixed bottom-5 right-5 bg-indigo-600 text-white p-3 rounded-full shadow-lg hover:bg-indigo-700 transition-opacity duration-300 opacity-0 z-50">
+        <i data-lucide="arrow-up" class="h-6 w-6"></i>
+    </button>
+    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+    
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>
